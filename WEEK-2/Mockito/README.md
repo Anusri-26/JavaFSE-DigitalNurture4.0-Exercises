@@ -40,22 +40,4 @@ You need to ensure that a method is called with specific arguments during the te
 - Run `MyServiceTest.java` using your IDE’s test runner (JUnit).
 
 
-## 🧪 How to Run
-- Make sure your Maven project includes the following dependencies:
-```xml
-<dependency>
-    <groupId>org.mockito</groupId>
-    <artifactId>mockito-core</artifactId>
-    <version>4.0.0</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter</artifactId>
-    <version>5.8.2</version>
-    <scope>test</scope>
-</dependency>
-
-
-
 ---
