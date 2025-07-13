@@ -58,6 +58,7 @@ spring-boot-country-rest/
 {
   "message": "Hello, World!"
 }
+
 2️⃣ Get All Countries
 URL: GET /countries
 
@@ -77,6 +78,8 @@ Sample Response:
     "capital": "Washington, D.C."
   }
 ]
+
+
 3️⃣ Get Country by Code
 URL: GET /countries/{code}
 
@@ -94,12 +97,11 @@ Sample Response:
 }
 404 Response:
 
-json
-Copy
-Edit
 {
   "error": "Country not found"
 }
+
+
 🧑‍💻 Code Snippets
 ✅ Country.java (Model)
 
@@ -110,6 +112,7 @@ public class Country {
     
     // Constructors, Getters, Setters
 }
+
 🌍 CountryController.java
 
 @RestController
@@ -140,6 +143,7 @@ public class CountryController {
                         .body(Map.of("error", "Country not found")));
     }
 }
+
 🚀 CountryRestApplication.java (Main Class)
 
 @SpringBootApplication
@@ -148,6 +152,7 @@ public class CountryRestApplication {
         SpringApplication.run(CountryRestApplication.class, args);
     }
 }
+
 🛠️ How to Run
 Clone or download the repository.
 
@@ -157,10 +162,10 @@ Run using your IDE or command line:
 mvn spring-boot:run
 Test endpoints using browser, curl, or Postman.
 
+
 📫 Example Requests Using curl
 
 curl http://localhost:8080/hello
 curl http://localhost:8080/countries
 curl http://localhost:8080/countries/IN
-📜 License
-This project is open source and provided for learning purposes.
+
