@@ -47,7 +47,7 @@ jwt-auth-service/
 ### 1️⃣ `POST /auth/login`
 
 - **Request:**
-```json
+json
 {
   "username": "admin",
   "password": "admin123"
@@ -172,15 +172,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 properties
 
 server.port=8080
+
 🛠️ How to Run
 
 mvn spring-boot:run
 Test using Postman or curl:
 
 curl -X POST http://localhost:8080/auth/login -H "Content-Type: application/json" -d '{"username":"admin","password":"admin123"}'
-📫 Notes
-JWT expires in 1 hour (customizable)
 
-You can extend it to use a database or Spring Security's UserDetailsService for real authentication
 
 
