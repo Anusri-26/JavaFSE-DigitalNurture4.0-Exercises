@@ -54,7 +54,8 @@ spring-boot-country-rest/
 - **URL:** `GET /hello`
 - **Description:** Returns a simple "Hello, World!" message.
 - **Sample Response:**
-```json
+
+json
 {
   "message": "Hello, World!"
 }
@@ -163,9 +164,4 @@ mvn spring-boot:run
 Test endpoints using browser, curl, or Postman.
 
 
-📫 Example Requests Using curl
-
-curl http://localhost:8080/hello
-curl http://localhost:8080/countries
-curl http://localhost:8080/countries/IN
 
