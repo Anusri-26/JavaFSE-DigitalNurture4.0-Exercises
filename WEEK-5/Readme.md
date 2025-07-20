@@ -7,7 +7,6 @@ Build and run microservices for a banking application:
 - Eureka Discovery Server
 - API Gateway with Global Logging Filter
 
----
 
 ## 1️⃣ Account Microservice
 ### ✅ Setup
@@ -34,7 +33,9 @@ server.port=8080
 spring.application.name=account-service
 eureka.client.service-url.defaultZone=http://localhost:8761/eureka
 
-2️⃣ Loan Microservice
+
+
+## 2️⃣ Loan Microservice
 ✅ Setup
 Artifact: loan
 Same dependencies as account service
@@ -56,7 +57,7 @@ server.port=8081
 spring.application.name=loan-service
 eureka.client.service-url.defaultZone=http://localhost:8761/eureka
 
-3️⃣ Eureka Discovery Server
+##3️⃣ Eureka Discovery Server
 ✅ Setup
 Artifact: eureka-discovery-server
 Dependency:
@@ -76,12 +77,12 @@ public class EurekaDiscoveryServerApplication { }
 ✅ Test URL
 Visit: http://localhost:8761
 
-4️⃣ Register Microservices to Eureka
+##4️⃣ Register Microservices to Eureka
 Add @EnableDiscoveryClient to both account and loan services
 Define spring.application.name in their respective application.properties
 Verify in Eureka UI under Instances currently registered with Eureka
 
-5️⃣ API Gateway
+##5️⃣ API Gateway
 ✅ Setup
 Artifact: api-gateway
 Dependencies:
@@ -101,7 +102,7 @@ http://localhost:9090/account-service/accounts/001
 
 http://localhost:9090/loan-service/loans/H001
 
-6️⃣ Global Logging Filter
+##6️⃣ Global Logging Filter
 ✅ LogFilter.java
 
 @Component
@@ -117,7 +118,8 @@ public class LogFilter implements GlobalFilter {
 }
 Check the logs in the API Gateway console for each incoming request.
 
-✅ Final Notes
+
+##✅ Final Notes
 All services run independently on separate ports
 
 Registered dynamically with Eureka Discovery Server
