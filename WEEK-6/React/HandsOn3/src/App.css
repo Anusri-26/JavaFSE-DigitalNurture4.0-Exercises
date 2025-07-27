@@ -1,0 +1,51 @@
+.label.name {
+  color: #007bff; /* Blue */
+  font-weight: bold;
+}
+
+.label.school {
+  color: #dc3545; /* Red */
+  font-weight: bold;
+}
+
+.label.total {
+  color: #6f42c1; /* Purple */
+  font-weight: bold;
+}
+
+.label.goal {
+  color: #ff8800; /* Orange */
+  font-weight: bold;
+}
+
+.label.score {
+  color: #28a745; /* Green */
+  font-weight: bold;
+}
+
+.value {
+  color: #333;
+}
+
+.score-container {
+  background-color: #fff;
+  padding: 25px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+h2 {
+  color: #2e8b57;
+  text-align: center;
+}
